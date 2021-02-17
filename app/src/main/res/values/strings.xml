@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Стать курьером</string>
+
+    <string name="nav_draw_open">Open</string>
+    <string name="nav_draw_close">Close</string>
+
+</resources>

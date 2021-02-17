@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HelpActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/but_back"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/arrow_left"
+            android:background="@drawable/rounded_edittext_lightgray"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="15dp">
+
+        </Button>
+
+        <TextView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/goudy_bookletter_1911"
+            android:textSize="20dp"
+            android:text="Помощь">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <ExpandableListView
+            android:scrollbars="none"
+            android:layoutDirection="rtl"
+            android:id="@+id/expListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:indicatorLeft="1dp"
+            android:indicatorRight="50dp"
+            android:groupIndicator="@drawable/indicator">
+        </ExpandableListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_contact"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Связаться с нами"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_edittext_pinky">
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

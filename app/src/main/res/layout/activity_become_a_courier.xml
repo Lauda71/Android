@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_bcm_courier"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BecomeACourierActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start">
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Работа"
+                android:textColor="@color/black"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="курьером"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="по доставке еды"
+                android:textColor="@color/black"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:paddingTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Какой-то дополнительный текст про высокие з/п..."
+                />
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Стать курьером"
+                android:background="@drawable/rounded_edittext_pinky"/>
+
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Удобно"
+                android:textColor="@color/black"
+                android:textSize="40dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="и выгодно"
+                android:textColor="@color/black"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_bonus"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Подарки за заказ"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выполните n-ое кол-во заказов до DD:MM:YYYY"/>
+
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_courier"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Бонус до 5000$"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выполните от 10 заказов за первые 365 дней"/>
+
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_card"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Ежедневный доход"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Выплаты приходят каждый день на вашу банковскую карту"/>
+
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_time"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Выбирайте время"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Работайте по своему графику"/>
+
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_transport"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Пользуйтесь скидками до 5%"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="На покупку или ремонт траноспорта от партнеров"/>
+
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_go"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Доставляйте как удобно"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сами выбирайте свой транспорт"/>
+
+
+            <ImageView
+                android:layout_marginTop="35dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/pic_mask"/>
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:text="Маски и перчатки"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Средства личной защиты здоровья регулярно выдает партнер"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@mipmap/pic_tile_1"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@mipmap/pic_tile_2"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@mipmap/pic_tile_3"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:src="@mipmap/pic_tile_4"
+                android:padding="20dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
